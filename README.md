@@ -1,5 +1,7 @@
 # ssm-selector
 
+[![CI](https://github.com/kkmiura/ssm-selector/actions/workflows/publish-to-test-pypi.yml/badge.svg)](https://github.com/kkmiura/ssm-selector/actions/workflows/publish-to-test-pypi.yml)
+
 `ssm-selector` is a CLI tool that wraps the `aws ssm start-session` command to simplify the process of connecting to an EC2 instance using SSM.
 
 ## Installation
