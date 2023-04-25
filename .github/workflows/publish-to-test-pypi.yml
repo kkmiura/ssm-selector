@@ -19,7 +19,7 @@ jobs:
 
     - name: Build
       run: |
-        poertry build
+        poetry build
 
     - name: Publish distribution 📦 to Test PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
