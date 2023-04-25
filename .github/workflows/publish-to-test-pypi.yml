@@ -30,6 +30,7 @@ jobs:
         poetry publish -r test-pypi -u __token__ -p $TEST_PYPI_API_TOKEN
     - name: Publish distribution 📦 to PyPI
       if: startsWith(github.ref, 'refs/tags')
-      uses: pypa/gh-action-pypi-publish@release/v1
-      with:
-        password: ${{ secrets.PYPI_API_TOKEN }}
+      env:
+        PYPI_API_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+      run: |
+        poetry publish -u __token__ -p $PYPI_API_TOKEN
