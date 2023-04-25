@@ -3,6 +3,7 @@ name = "ssm-selector"
 version = "0.0.1"
 description = "An interactive SSM Session starter'"
 license = "MIT"
+authors=["kkmiura"]
 
 [tool.poetry.scripts]
 ssm-selector = "ssm_selector.main:main"
