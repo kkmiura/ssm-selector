@@ -23,8 +23,8 @@ jobs:
 
     - name: Publish distribution 📦 to Test PyPI
       env:
-        TEST_PYPI_REPO_URL: ${{ secrets.TEST_PYPI_API_TOKEN }}
-        TEST_PYPI_API_TOKEN: https://test.pypi.org/legacy/
+        TEST_PYPI_REPO_URL: https://test.pypi.org/legacy/
+        TEST_PYPI_API_TOKEN: ${{ secrets.TEST_PYPI_API_TOKEN }}
       run: |
         poetry publish -r $TEST_PYPI_REPO_URL -u __token__ -p $TEST_PYPI_API_TOKEN
     - name: Publish distribution 📦 to PyPI
